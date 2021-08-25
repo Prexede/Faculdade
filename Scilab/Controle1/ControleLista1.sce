@@ -195,7 +195,7 @@ Operator / : Error -1 not yet managed.
 */
 //b) Obtenha a matriz A3 acrescentando uma linha na matriz A contendo os quatro primeiros elementos do vetor x.
 
-//turururuur
+ A3 = [A;x(:,1:4)];
 
 //4.7 Fun¸c˜oes
 
