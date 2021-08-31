@@ -20,7 +20,7 @@ function [Vgs,Id,Rd] = Jfet(Idss,Vp,Ro,Tipo)
 %
 %   Dependências:
 %
-%   Nenhuma
+%   Limpar o Codigo 
 %
 %
 %   Desenvolvida por: Carlos Eduardo Souza Silva.
@@ -30,12 +30,10 @@ function [Vgs,Id,Rd] = Jfet(Idss,Vp,Ro,Tipo)
 switch Tipo
     case 'N' 
        Vgs=linspace(Vp,0);
-       Vxs=linspace(0,Vp);
        Id = Idss*(( 1-(Vgs/Vp))).^2;
        Rd = Ro ./(( 1-(Vgs/Vp))).^2;
-       Ix = -1.*Vxs;
        subplot(2,2,1)
-       plot(Vgs,Id,'b',Vxs,Ix,'r')
+       plot(Vgs,Id,'b')
        ylim([0 0.008])
        xlabel('Vgs[V]','FontSize',14);
        ylabel('Id[Ma]','FontSize',14);
@@ -46,8 +44,7 @@ switch Tipo
        xlabel('Rd[ohm]','FontSize',14);
        ylabel('Vgs[V]','FontSize',14);
        grid on
-       
-      find(Ix==Id)
+
     case 'P'
        Vgs=linspace(0,Vp);
        Id = Idss*(( 1-(Vgs/Vp))).^2;
