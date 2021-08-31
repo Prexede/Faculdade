@@ -218,7 +218,7 @@ Operator / : Error -1 not yet managed.
 
 //b) Na mesma figura, sobreponha um gr´afico de linha verde cont´ınua contendo os dados de p2 como fun¸c˜ao de t2 obtidos na Se¸c˜ao 4.7.
 
-
+    plot(p2,'g-.');
 
 //c) Adicione um t´ıtulo para o gr´afico.
     title("Grafico das funçoes P(t)")
