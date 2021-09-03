@@ -1,0 +1,25 @@
+function [Vgs] = Vgs(Idss,Vp,Id,Rs,)
+
+syms x
+eq = Idss + ((2*x*Rs*Idss)/Vp) + (((x^2)*(Rs*2)*Idss)/(Vp^2)) - x == 0;
+Id=solve(eq, x);
+
+
+Vgs = -Id * Rs;
+
+switch Tipo
+    case 'F' 
+     Id = Idss * (1 + (Vgg/Vp)^2);   
+     Vgs = -Vgg;
+     
+    case 'A'
+      eq = Idss + (2*Id*Rs*Idss)/Vp + (((Id*Rs)^2)*Idss)/(Vp^2) == Id;
+      Id = solve(eq,Id);
+      Vgs = -Rs*Id;
+      
+    case 'D'
+       Vg = (R2*Vdd)/(R1+R2);
+       eq = Idss*(1-(2*(Vg-Id*Rs))/Vp + ((Vg^2) - (2*Vg*Id*Rs) + ((Id^2)+(Rs^2)))/Vp^2) == Id;
+       Id = solve(eq,Id);
+       Vgs = Vg - Id*Rs;
+end
