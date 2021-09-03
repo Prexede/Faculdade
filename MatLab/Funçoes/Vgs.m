@@ -21,9 +21,6 @@ function [Id,Vgs] = Vgs(Idss,Vp,Rs,Vgg,Tipo)
 %   Data: /2021
 %   Última modificação:  03/09/2021
 
-syms x
-eq = Idss + ((2*x*Rs*Idss)/Vp) + (((x^2)*(Rs*2)*Idss)/(Vp^2)) - x == 0;
-Id=solve(eq, x);
 
 switch Tipo
     case 'F' 
