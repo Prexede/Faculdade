@@ -1,6 +1,6 @@
 function [Id,Vgs] = Vgs(Idss,Vp,Rs,Vgg,Tipo)
 
-%   Descobre o Vgs/Id de acordo com a polarização dele
+%   Descobre o Id/Vgs de acordo com a polarização dele
 %  
 %
 %   Sintaxe:
@@ -18,9 +18,10 @@ function [Id,Vgs] = Vgs(Idss,Vp,Rs,Vgg,Tipo)
 %
 %
 %   Desenvolvida por: Carlos Eduardo Souza Silva.
-%   Data: /2021
+%   Data: 03/09/2021
 %   Última modificação:  03/09/2021
 
+syms x
 
 switch Tipo
     case 'F' 
