@@ -1,4 +1,4 @@
-function [Gm,Gm0,Av,Zo,Zi] = Model(Idss,Vp,Vgs,RD,RS,RG,RL,Tipo)
+function [Gm,Gm0,Av,Avt,Zo,Zi] = Model(Idss,Vp,Vgs,RD,RS,RG,RL,Tipo)
 
 %   Descobre o Id/Vgs de acordo com a polarização dele
 %  
@@ -30,11 +30,12 @@ switch Tipo
         Zi = RG;
         Zo = RD;
         Av = ((-Gm)*(RD));
-    
+        
     case 'Fs'
         Zi = RG;
         Zo = RD;
-        Av = (-Gm*RD)/(1+(Gm*RS));
+        Av = (-Gm*((RD*RL)/(RD + RL)))/(1 + Gm*RS);
+        Avt = Av*(Zi/(RG+Zi));
         
     case 'D'
         Zi = RG;
@@ -46,7 +47,7 @@ switch Tipo
         Res = 1/Gm;
         Zi =(RS*Res)/(RS+Res);
         Zo = RD;
-        Par = (RD*RL)/(RD+RL);
+        Par = ((RD*RL)/(RD+RL));
         Av = Gm*Par;
-  
+        Avt = Av*(Zi/(RG+Zi)); %RG = R3
 end
