@@ -1,4 +1,4 @@
-function [Domin,Ri,Ro,Req] = FreqInf(Rsig,Rg,Rd,Rs,Rl,gm,Cg,Cc,Cs)
+function [Domin,Ri,Ro,Req,FLg,FLc,FLs] = FreqInf(Rsig,Rg,Rd,Rs,Rl,gm,Cg,Cc,Cs)
 
 %   Diz a Frequencia dominante inferior para o Transistor JFET
 %  
@@ -35,7 +35,7 @@ function [Domin,Ri,Ro,Req] = FreqInf(Rsig,Rg,Rd,Rs,Rl,gm,Cg,Cc,Cs)
         
         if FLg > FLc && FLg > FLs
                 disp('FLg');
-                Domin = Flg;
+                Domin = FLg;
                 
         elseif FLc > FLs
                 disp('FLc');

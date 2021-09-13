@@ -1,4 +1,4 @@
-function [Gm,Gm0,Av,Avt,Zo,Zi] = Model(Idss,Vp,Vgs,RD,RS,RG,RL,Tipo)
+function [Gm,Gm0,Av,Avt,Zo,Zi] = Model(Idss,Vp,Vgs,RD,RS,RG,RL,Rf,Tipo)
 
 %   Descobre o Id/Vgs de acordo com a polarização dele
 %  
@@ -10,7 +10,7 @@ function [Gm,Gm0,Av,Avt,Zo,Zi] = Model(Idss,Vp,Vgs,RD,RS,RG,RL,Tipo)
 %   Observações:
 %
 %   Utiliza a equação de Shockley 
-
+%   Use 3 casas no VGS 
 %
 %   Dependências:
 %
@@ -23,7 +23,7 @@ function [Gm,Gm0,Av,Avt,Zo,Zi] = Model(Idss,Vp,Vgs,RD,RS,RG,RL,Tipo)
 
     Gm0 = (2*Idss)/(abs(Vp));
     Gm = Gm0 * ( 1 - (Vgs/Vp));
-
+    
 switch Tipo
     
     case 'Fc'
@@ -35,7 +35,7 @@ switch Tipo
         Zi = RG;
         Zo = RD;
         Av = (-Gm*((RD*RL)/(RD + RL)))/(1 + Gm*RS);
-        Avt = Av*(Zi/(RG+Zi));
+        Avt = Av*(Zi/(Rf+Zi));
         
     case 'D'
         Zi = RG;
@@ -49,5 +49,5 @@ switch Tipo
         Zo = RD;
         Par = ((RD*RL)/(RD+RL));
         Av = Gm*Par;
-        Avt = Av*(Zi/(RG+Zi)); %RG = R3
+        Avt = Av*(Zi/(Rf+Zi)); %RG = R3
 end
