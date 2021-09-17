@@ -8,7 +8,7 @@ f.background = -2;
 title('Gráfico da Curva de Tensão do Capacitor pelo XCOS', 'Fontsize', 2);
 xlabel('Tempo(s)', 'Fontsize',4)
 ylabel('Tensão[V]','Fontsize',4)
-plot(Tensao2.time,Tensao2.values,'r-', 'LineWidth',2);
+plot(TensaoB.time,TensaoB.values,'r-', 'LineWidth',2);
 
 figure(2)
 //Alterando as propriedades do fundo do gráfico
@@ -17,4 +17,4 @@ f.background = -2;
 title('Gráfico da Curva da Corrente do Capacitor pelo XCOS', 'Fontsize', 2);
 xlabel('Tempo(s)', 'Fontsize',4)
 ylabel('Corrente[A]','Fontsize',4)
-plot(Corrente2.time,Corrente2.values,'b-', 'LineWidth',2);
+plot(CorrenteB.time,CorrenteB.values,'b-', 'LineWidth',2);

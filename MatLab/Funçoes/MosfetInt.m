@@ -1,0 +1,34 @@
+function [Id,Vds,Vgs] = MosfetInt(k,Vt,Vd,Rg1,Rg2,Rd,Rs,Tipo)
+
+%   Descobre o Id/Vgs de acordo com a polarização dele
+%  
+%
+%   Sintaxe:
+%
+%   [Id,Vds] = MosfetInt(k,Vt,Vd,Rg1,Rg2,Rd,Rs,Tipo)
+%
+%   Observações:
+%
+%   
+
+%
+%   Dependências:
+%
+%  
+%
+%
+%   Desenvolvida por: Carlos Eduardo Souza Silva.
+%   Data: 
+%   Última modificação:  
+
+syms x
+switch Tipo
+    case 'Div' 
+    Vg = (Rg2*Vd)/(Rg1+Rg2);
+    eq = (Rs*k)*(x^2) + (1 - (2*Rs*k*Vt))*x + (((Vt^2)*Rs*k)-Vg);
+    Vgs = solve(eq,x);
+    Id = (Vg - Vgs)/Rs;
+    Vds = Vd - (Id*(Rs+Rd));
+     
+
+end
