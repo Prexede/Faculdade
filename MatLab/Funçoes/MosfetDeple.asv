@@ -1,4 +1,4 @@
-function [Avt,Av,Zin,Zout,Vgs,Id] = MosfetDeple(Idss,Vp,Rd,Rs,Rl,Rf,Rg1,Rg2,Vd,Tipo)
+function [Avt,Av,Zin,Zout] = MosfetDeple(Idss,Vp,Rd,Rs,Rl,Rf,Rg1,Rg2,Vd,Tipo)
 
 %   Descobre o Id/Vgs de acordo com a polarização dele
 %  
@@ -25,7 +25,17 @@ function [Avt,Av,Zin,Zout,Vgs,Id] = MosfetDeple(Idss,Vp,Rd,Rs,Rl,Rf,Rg1,Rg2,Vd,T
 syms x
 
 switch Tipo
-
+    case 'F' 
+     eq = x == Idss * (1 - ((-x*(Rs))/Vp))^2;   
+     Id = solve(eq,x);
+     Vds = Vd - (Id*(Rd+Rs));
+     
+     
+     case 'G'
+     eq = x == Idss * (1 - ((-x*(Rd))/Vp))^2;   
+     Id = solve(eq,x);
+     Vgs = 4 - (Id*(Rs));
+     Vds = -Id*(Rd+Rs) + 22;
       
     case 'Div'
         Vg = ((Rg2*Vd)/(Rg1+Rg2));
@@ -33,15 +43,12 @@ switch Tipo
         Id = solve(eq,x);
         Vgs = Vg - (Id*Rs);
         Vds = Vd - (Id*(Rs+Rd));
-        
-        
         Zin = ((Rg1*Rg2)/(Rg1+Rg2));
         Zout = Rd;
-        Gm0 = (2*Idss)/(abs(Vp));
-        Gm = Gm0 * ( 1 - (Vgs/Vp));
-        par = (Rl*Rd)/(Rl+Rd);
-        Av = (-Gm*Rd);
-        %Av = (-Gm*(par))/(1 + (Gm*(Rs)));
-        Avt = Av*(Zin/(Rf+Zin));
-       
+        Gm0 = ((2*Idss)/abs(Vp));
+        Gm = Gm0*(1-Vgs/Vp);
+        par = (Rd*Rl)/(Rd+Rl);
+        Av = (-Gm*par);
+        Avt = Av*(Zin/Rf+Zin);
+        
 end

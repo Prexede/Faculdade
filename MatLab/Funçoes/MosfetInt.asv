@@ -10,7 +10,7 @@ function [Id,Vds,Vgs,Zin,Zout,Av,Avt] = MosfetInt(k,Vt,Vd,Rg1,Rg2,Rd,Rs,Rf,Rl,Ti
 %   Observações:
 %
 %   
-%   Esponja chatão 
+
 %
 %   Dependências:
 %
@@ -32,8 +32,7 @@ switch Tipo
     Zin = ((Rg1*Rg2)/(Rg1+Rg2));
     Zout = Rd;
     Gm = 2*k*(Vgs-Vt);
-    par = (Rd*Rl)/(Rd+Rl);
-    %Av = (-Gm*(par))/(1 + (Gm*Rs));
-    Av = (-Gm*Rd);
-    Avt = Av*(Zin/Rf+Zin);
+    Av = (-Gm *(Rd+Rl))/(1 + Gm*Rs);
+    Av = (
+    Avt = (Zin/Rf+Zin);
 end
