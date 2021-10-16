@@ -26,7 +26,7 @@ FT = Kp*Kb*Ks;
 Deg = csim('step',t,FT); //Aplicar entrada Degrau
 
 //b)
-Imp = csim('impuls',t,FT);
+Imp = csim('impuls',t,FT);  //Aplicar entrada Impulso
 
 //c)
 den1 = s*(((R1*R2*C1*C2)*(s^2)) + (s*(R1*C1)+(R2*C2)+(R2*C1)) + 1);
@@ -45,9 +45,11 @@ arb = csim(timefun, t1, FT);
 clf()
 
 
+//Alterando as propriedades do fundo do gráfico
+
+
 figure(0)
 
-//Alterando as propriedades do fundo do gráfico
 f =get("current_figure");
 f.background = -2;
 xlabel('Tempo[s]', 'Fontsize',4)
@@ -58,7 +60,6 @@ plot(t,Deg,'g','LineWidth',2);
 
 figure(1)
 
-//Alterando as propriedades do fundo do gráfico
 f =get("current_figure");
 f.background = -2;
 xlabel('Tempo[s]', 'Fontsize',4)
@@ -69,7 +70,6 @@ plot(t,Imp,'b','LineWidth',2);
 
 figure(2)
 
-//Alterando as propriedades do fundo do gráfico
 f =get("current_figure");
 f.background = -2;
 xlabel('Tempo[s]', 'Fontsize',4)
@@ -79,12 +79,11 @@ xgrid(1)
 plot(t,Ramp,"r",'LineWidth',2);
 
 figure(3)
-//Alterando as propriedades do fundo do gráfico
 f =get("current_figure");
 f.background = -2;
 xlabel('Tempo[s]', 'Fontsize',4)
 ylabel('Tensão[V]','Fontsize',4)
-title("Grafico da resposta do sistema em malha aberta[Entrada Rampa] X tempo");
+title("resposta do sistema no dominio do tempo");
 xgrid(1)
 plot(t1,arb,"r",'LineWidth',2);
 plot(t1,timefun(t1),"b",'LineWidth',2);
