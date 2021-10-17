@@ -8,7 +8,7 @@ t = linspace(0,10,100); //Tempo
 //Definição da FT
 //a)
 s=poly(0,"s");
-den = ((R1*R2*C1*C2)*(s^2)) + (s*(R1*C1)+(R2*C2)+(R2*C1)) + 1;
+den = ((R1*R2*C1*C2)*(s^2)) + (s*((R1*C1)+(R2*C2)+(R2*C1))) + 1;
 num = R2;
 S = syslin('c',num,den);
 
@@ -16,7 +16,7 @@ S = syslin('c',num,den);
 [z,p,k]=tf2zp(S);   //Encontrando Zeros e Polos
 
 
-//c)
+//c) 
 Ks = 0.4;   //Sensor
 Kb = 8.061; //Bomba
 Kp = S;     //Planta;
