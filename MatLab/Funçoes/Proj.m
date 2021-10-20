@@ -17,7 +17,7 @@ function [C2,R1,R] = Proj(a1,b1,Av,C1,Freq,tipo)
 %  
 %
 %
-%   Desenvolvida por: Carlos Eduardo Souza Silva.
+%   Desenvolvida por: Carlos Eduardo Souza Silva e Allan Corço de Araujo
 %   Data: 
 %   Última modificação:  
 

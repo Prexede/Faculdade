@@ -21,7 +21,7 @@ function [Avt,Av,Zin,Zout,Vgs,Id,FIci,FIco,FIcs,FSci,FSco] = MosfetDeple(Idss,Vp
 %  
 %
 %
-%   Desenvolvida por: Carlos Eduardo Souza Silva.
+%   Desenvolvida por: Carlos Eduardo Souza Silva e Allan Corço de Araujo
 %   Data: 
 %   Última modificação:  
 

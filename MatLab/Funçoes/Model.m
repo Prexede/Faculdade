@@ -17,7 +17,7 @@ function [Gm,Gm0,Av,Avt,Zo,Zi] = Model(Idss,Vp,Vgs,RD,RS,RG,RL,Rf,Tipo)
 %   Polarização em divisor de tensão ainda nao esta recebendo valores;
 %
 %
-%   Desenvolvida por: Carlos Eduardo Souza Silva.
+%   Desenvolvida por: Carlos Eduardo Souza Silva e Allan Corço de Araujo
 %   Data: 03/09/2021
 %   Última modificação:  03/09/2021
 

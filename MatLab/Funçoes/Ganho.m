@@ -16,7 +16,7 @@ function [Vgs,Id] = Ganho(RG1,RG2,Rs,Vd,Vp,k,Tipo)
 %   
 %
 %
-%   Desenvolvida por: Carlos Eduardo Souza Silva.
+%   Desenvolvida por: Carlos Eduardo Souza Silva e Allan Corço de Araujo
 %   Data: 
 %   Última modificação:  
     syms x

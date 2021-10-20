@@ -22,7 +22,7 @@ function [Id,Vds,Vgs,Zin,Zout,Av,Avt,FIci,FIco,FIcs,FSci,FSco] = MosfetInt(k,Vt,
 %  
 %
 %
-%   Desenvolvida por: Carlos Eduardo Souza Silva.
+%   Desenvolvida por: Carlos Eduardo Souza Silva e Allan Corço de Araujo
 %   Data: 
 %   Última modificação:  
 
