@@ -12,7 +12,7 @@ syms K % - hey if you have the symbolic toolbox try this
 %coeff = [1,18,77,K]; 
 %or this
 %coeff = [1,9,(K-10),2]
-coeff = [1,3,K,3]
+coeff = [1,4*K,0,5+K]
 
 %%%%Create the First Row of the Routh Table
 routh_table = [];
