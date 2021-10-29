@@ -63,7 +63,19 @@ for n = 1:2
     end
 end
 
+for n = 1:2
+     Ru(6,n) = - (det([Ru(4,1) Ru(5,1); Ru(4,n+1) Ru(5,n+1)]))/ Ru(5,1);
+     if Ru(6,n) == 0 
+        Ru(6,n) = 0.00001;
+    end
+end
 
+for n = 1:2
+     Ru(7,n) = - (det([Ru(5,1) Ru(6,1); Ru(5,n+1) Ru(6,n+1)]))/ Ru(6,1);
+     if Ru(7,n) == 0 
+        Ru(7,n) = 0.00001;
+    end
+end
 
 Ft = tf(num,den);
 [z,p,k] = tf2zp(num,den);
