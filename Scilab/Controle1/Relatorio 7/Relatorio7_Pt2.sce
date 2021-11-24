@@ -20,7 +20,7 @@ T1 = syslin('c',num1,den1);
 t = linspace(0,1.3,130);
 deff('u=timefun(t)','u=10') //Entrada Degrau 10V
 w1 = csim(timefun,t,T1);   //Velocidade angular 
-
+wt1 = w1/11.466;              //Vtaco
 
 figure(0)
 //Alterando as propriedades do fundo do gráfico
@@ -32,7 +32,7 @@ title("Velocidade angular a uma entrada degrau(Modelo de Segunda ordem )");
 plot(t,w1,'r','LineWidth',2);
 xgrid(1)
 
-wt1 = w1/11.466;              //Vtaco
+
 
 figure(1)
 //Alterando as propriedades do fundo do gráfico

@@ -79,7 +79,7 @@ end
 
 Ft = tf(num,den);
 [z,p,k] = tf2zp(num,den);
-
+rlocus(num,den)
 %for x = 1:3
 %     if p(x) > 0
 %         disp('Resposta Instavel');
@@ -90,6 +90,6 @@ Ft = tf(num,den);
 %     end
 % end
 
-%step(Ft,1);   %Plota entrada degrau
+step(Ft,10);   %Plota entrada degrau
 %impulse(Ft);   %Plota entrada impulso 
       

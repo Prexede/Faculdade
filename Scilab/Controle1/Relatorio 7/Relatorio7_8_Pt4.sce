@@ -14,7 +14,7 @@ tau=t(indice);
 
 plot(t,w,'b','LineWidth',2);
 plot(dados_motor(3:262,1),dados_motor(3:262,2),'r','LineWidth',1);
-L = legend('Primeira ordem','Segunda ordem','alo');
+L = legend('Teorico','Real',);
 xgrid(1)
 
 
