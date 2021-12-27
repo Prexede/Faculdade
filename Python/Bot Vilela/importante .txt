@@ -1,0 +1,17 @@
+https://us-east-2.console.aws.amazon.com/lambda/home?region=us-east-2#/functions/BotVilela?tab=code
+
+AWS AMAZON
+
+
+https://api.telegram.org/bot5038538002:AAFaO4rNT99tdGrHc262AXEwZd7geJ62QQ8/getUpdates
+
+UPDATE BOT 
+
+
+https://www.youtube.com/watch?v=aqnJvXOIr6g
+
+Video bom
+
+https://medium.com/@vitor.azambuja/criando-um-bot-para-notificar-um-grupo-de-telegram-com-python-3e727257a980
+
+Site util
