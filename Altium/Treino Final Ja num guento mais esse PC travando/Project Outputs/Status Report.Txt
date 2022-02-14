@@ -1,0 +1,10 @@
+Output: Electrical Rules Check
+Type  : ERC
+From  : Project [Treino Final Ja num guento mais esse PC travando.PrjPcb]
+   Generated File[Treino Final Ja num guento mais esse PC travando.html]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 12:59:07 On 24/01/2022
