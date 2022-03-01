@@ -55,7 +55,7 @@ Wbw = Wbw*sqrt((1-(2*zeta^2))+sqrt(4*zeta^4-(4*zeta^2)+2));
 Wmf=0.8*Wbw;  
 [Mag,Fase] = bode(Ft,Wmf);
 
-angmax = mf - (180 + Fase)+ 5 ;
+angmax = mf - (180 + Fase)+ 8 ;
 angmax = angmax*pi/180;
 
 %Beta
@@ -79,9 +79,15 @@ denAt=[1 Tat/gama];
 CompAt=tf(beta*numAt,denAt);
 
 %% Avanço e Atraso de fase
-%Mesmo beta
-%Mesmo Gama
-%Mesmo Tat e Tav
+Wmf=0.75*Wbw; 
+angmax = mf - (180 + Fase)+ 12 ;       %CHORINHO DIFERENCIADO PRA CABER
+angmax = angmax*pi/180;
+%Beta
+beta=(1-sin(angmax))/(1+sin(angmax));  
+%Gama
+gama=1/beta;   
+%Tav 
+Tav=sqrt(beta)*Wmf;
 
 %Definição do compensador de avanço de fase
 numGav = [1 Tav];
@@ -98,7 +104,7 @@ Gat = tf(numGat,denGat);
 %Ft com Avanço de fase
 FtAv = (Ft*CompAv);
 %Ft com Avanço de fase e ajuste de ganho
-FtAvK = (Ft*CompAv*5.43);
+FtAvK = (Ft*CompAv*5.62);
 
 %Ft com Atraso de fase
 FtAt = (Ft*CompAt);
@@ -108,9 +114,9 @@ FtAtK = (Ft*CompAt*0.00013);
 %Ft com Atraso e Avanço de fase
 FtAtv = (Ft*Gat*Gav);
 %Ft com Atraso e Avanço de fase e ajuste de ganho
-% FtAtvK = (Ft*Gat*Gav);
+FtAtvK = (Ft*Gat*Gav*151.35);
 
-%%Resposta no tempo
+%% Resposta no tempo
 %Ft principal
 FtMf = Ft/(1+Ft);
 
@@ -124,7 +130,7 @@ FtAtMfK = FtAtK/(1 + FtAtK);
 
 %Ft Atraso e Avanço
 FtAtvMf = FtAtv/(1 + FtAtv);
-% FtAtMfK = FtAtK/(1 + FtAtK);
+FtAtvMfK = FtAtvK/(1 + FtAtvK);
 
 %% Plot Graficos
 
@@ -135,14 +141,18 @@ FtAtvMf = FtAtv/(1 + FtAtv);
 %     end
 % end  
 %%   Testes
-% figure(1)
-% bode(Ft,'b',FtAtv,'r')
-% figure(2)
-% step(FtMf,'b',FtAtvMf,'r')
-% stepinfo(Ft,FtAtMfK)
+figure(1)
+bode(Ft,'b',FtAtv,'r',FtAtvK,'g')
+figure(2)
+step(FtAtvMfK)
+% stepinfo(FtAtvMf)
+stepinfo(FtAtvMfK)
 
-margin(FtAtv)
 
+figure(3)
+margin(FtAtvK)
+% figure(4)
+% margin(FtAtvK)
 %bode(Ft,'b',FtAt,'r')
 %step(Ft,'b',FtAtMf,'r')
 %stepinfo(Ft,FtAtMf)
