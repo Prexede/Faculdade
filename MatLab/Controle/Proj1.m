@@ -28,7 +28,9 @@ num = [40];
 den = [1 40 0 0];
 S = 15;
 Ts = 2;
+W = {0.001,1000};
 
+[mag,phase,w] = bode(num,den,W);
 %Funçao 
 Ft = tf(num,den);
 
@@ -70,17 +72,30 @@ Tav=sqrt(beta)*Wmf;
 %Definição Compensador de Avanço de fase
 numAv=[1 Tav];
 denAv=[1 gama*Tav];
-CompAv=tf(gama*numAv,denAv);  %MUDEI AQUI O 1/B
+CompAv=tf(gama*numAv,denAv);  
 
 %% Atraso de Fase
-Tat=0.1*Wmf;
-numAt=[1 Tat];                      %Sa merda ta instavel ou ta errado 
-denAt=[1 Tat/gama];
-CompAt=tf(beta*numAt,denAt);
+
+m = 1;
+L = -(270 - (mf + 8));
+    while (phase(m) > L)
+        m = m+1;
+    end  
+    
+WbwAt = w(m-1);
+WmfAt=0.8*WbwAt; 
+
+y = mag(m-1);
+
+Tat = 1/(0.1*WmfAt);
+
+numAt=[Tat 1];                      
+denAt=[y*Tat 1];
+CompAt=tf(numAt,denAt);
 
 %% Avanço e Atraso de fase
-Wmf=0.75*Wbw; 
-angmax = mf - (180 + Fase)+ 12 ;       %CHORINHO DIFERENCIADO PRA CABER
+Wmf=0.8*Wbw; 
+angmax = mf - (180 + Fase) + 8 ;%+8 Segurança
 angmax = angmax*pi/180;
 %Beta
 beta=(1-sin(angmax))/(1+sin(angmax));  
@@ -88,6 +103,8 @@ beta=(1-sin(angmax))/(1+sin(angmax));
 gama=1/beta;   
 %Tav 
 Tav=sqrt(beta)*Wmf;
+%Tat
+Tat=0.1*Wmf;
 
 %Definição do compensador de avanço de fase
 numGav = [1 Tav];
@@ -95,8 +112,8 @@ denGav = [1 gama*Tav];
 Gav = tf(numGav,denGav);
 
 %Definição do compensador de atraso de fase
-numGat = [1 Tav];
-denGat = [1 Tav/gama];
+numGat = [1 Tat];
+denGat = [1 Tat/gama];
 Gat = tf(numGat,denGat);
 
 %% Funçoes
@@ -109,12 +126,12 @@ FtAvK = (Ft*CompAv*5.62);
 %Ft com Atraso de fase
 FtAt = (Ft*CompAt);
 %Ft com Atraso de fase e ajuste de ganho
-FtAtK = (Ft*CompAt*0.00013);
+FtAtK = (Ft*CompAt*27.227);
 
 %Ft com Atraso e Avanço de fase
 FtAtv = (Ft*Gat*Gav);
 %Ft com Atraso e Avanço de fase e ajuste de ganho
-FtAtvK = (Ft*Gat*Gav*151.35);
+FtAtvK = (Ft*Gat*Gav*109.64);
 
 %% Resposta no tempo
 %Ft principal
@@ -141,18 +158,22 @@ FtAtvMfK = FtAtvK/(1 + FtAtvK);
 %     end
 % end  
 %%   Testes
+%figure(1)
+%bode(FtAvK,'b',FtAtK,'r',FtAtvK,'g')
+%legend('Compensado Avanço','Compensado Atraso','Compensado Avanço e Atraso');
+%figure(1)
+%step(FtAvMfK,'b',FtAtMfK,'r',FtAtvMfK,'g')
+%legend('Compensado Avanço','Compensado Atraso','Compensado Avanço e Atraso');
+
 figure(1)
-bode(Ft,'b',FtAtv,'r',FtAtvK,'g')
-figure(2)
-step(FtAtvMfK)
-% stepinfo(FtAtvMf)
-stepinfo(FtAtvMfK)
+rlocus(FtAvMfK,'b',FtAtMfK,'r',FtAtvMfK,'g')
+legend('Compensado Avanço','Compensado Atraso','Compensado Avanço e Atraso');
 
+%stepinfo(FtAtvMfK)
+%stepinfo(FtAtvMfK)
 
-figure(3)
-margin(FtAtvK)
-% figure(4)
-% margin(FtAtvK)
+%figure(1)
+%margin(FtAtvK)
 %bode(Ft,'b',FtAt,'r')
 %step(Ft,'b',FtAtMf,'r')
 %stepinfo(Ft,FtAtMf)
