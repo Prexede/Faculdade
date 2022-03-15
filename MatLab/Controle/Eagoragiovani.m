@@ -10,12 +10,12 @@ function Eagoragiovani
 % mf = 30;
 % Fase = 171;
 
-num = [40];
-den = [1 40 0 0];
-mf = 53.69;
+num = [5];
+den = [0.25 1.25 1 0];
+mf = 45;
 
 
-Tf = tf(num,den);
+Tf = tf(0.0389*num,den);
 W = {0.001,1000};
 [mag,phase,w] = bode(num,den,W);
 
@@ -26,7 +26,7 @@ W = {0.001,1000};
 % Wbw = w(n);
 
 m = 1;
-L = -(270 - (mf + 8));
+L = -(180 - (mf + 5));
     while (phase(m) > L)
         m = m+1;
     end    
@@ -39,15 +39,15 @@ Wmf=0.8*Wbw;
 Tat = 1/(0.1*Wmf);
 numAt=[Tat 1];                      
 denAt=[y*Tat 1];
-CompAt=tf(numAt,denAt);
-FtAt = (Tf*CompAt*27.227);
+CompAt=tf(numAt,denAt)
+FtAt = (Tf*CompAt);
 figure(1)
 margin(FtAt)
 
-Ff = (FtAt/(1+FtAt));
-figure(2)
-step(Ff)
-stepinfo(Ff);
+% Ff = (FtAt/(1+FtAt));
+% figure(2)
+% step(Ff)
+% stepinfo(Ff);
 %% Metodo 2 
 % angmax = mf - (180 + Fase)+ 8 ;
 % angmax = angmax*pi/180;

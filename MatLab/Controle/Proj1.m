@@ -24,13 +24,21 @@ function Proj1
 
 %% Definiçao Variaveis 
 
+%Numerador e Denominador da nossa Função de Transferencia
 num = [40];
 den = [1 40 0 0];
+
+%Sobressinal
 S = 15;
+
+%Tempo de Assentamento
 Ts = 2;
+
+%Frequencia 
 W = {0.001,1000};
 
 [mag,phase,w] = bode(num,den,W);
+
 %Funçao 
 Ft = tf(num,den);
 
@@ -49,14 +57,14 @@ Wbw = Wbw*sqrt((1-(2*zeta^2))+sqrt(4*zeta^4-(4*zeta^2)+2));
 % Wbw = pi/(Tp*sqrt(1-zeta^2));
 % Wbw = Wbw*sqrt((1-(2*zeta^2))+sqrt(4*zeta^4-(4*zeta^2)+2)); 
 
- 
-    
-%% Avanço de Fase
+     
+%% Compensador por Avanço de Fase
 
 %Frequencia MalhaFechada
 Wmf=0.8*Wbw;  
 [Mag,Fase] = bode(Ft,Wmf);
 
+%Angulo maximo de compensação
 angmax = mf - (180 + Fase)+ 8 ;
 angmax = angmax*pi/180;
 
@@ -74,35 +82,45 @@ numAv=[1 Tav];
 denAv=[1 gama*Tav];
 CompAv=tf(gama*numAv,denAv);  
 
-%% Atraso de Fase
+%% Compensador por Atraso de Fase
 
+%Frequência da margem de fase desejada
 m = 1;
 L = -(270 - (mf + 8));
     while (phase(m) > L)
         m = m+1;
-    end  
-    
+    end     
 WbwAt = w(m-1);
 WmfAt=0.8*WbwAt; 
 
-y = mag(m-1);
+y = mag(m-1);   %Não precisa de conversão
 
+%Tat
 Tat = 1/(0.1*WmfAt);
 
+%Definição Compensador de Atraso de Fase
 numAt=[Tat 1];                      
 denAt=[y*Tat 1];
 CompAt=tf(numAt,denAt);
 
 %% Avanço e Atraso de fase
+
+%Frequencia de Malha Fechada
 Wmf=0.8*Wbw; 
+
+%Angulo maximo de compensação
 angmax = mf - (180 + Fase) + 8 ;%+8 Segurança
 angmax = angmax*pi/180;
+
 %Beta
 beta=(1-sin(angmax))/(1+sin(angmax));  
+
 %Gama
 gama=1/beta;   
+
 %Tav 
 Tav=sqrt(beta)*Wmf;
+
 %Tat
 Tat=0.1*Wmf;
 
@@ -158,16 +176,17 @@ FtAtvMfK = FtAtvK/(1 + FtAtvK);
 %     end
 % end  
 %%   Testes
-%figure(1)
-%bode(FtAvK,'b',FtAtK,'r',FtAtvK,'g')
-%legend('Compensado Avanço','Compensado Atraso','Compensado Avanço e Atraso');
-%figure(1)
-%step(FtAvMfK,'b',FtAtMfK,'r',FtAtvMfK,'g')
-%legend('Compensado Avanço','Compensado Atraso','Compensado Avanço e Atraso');
-
 figure(1)
-rlocus(FtAvMfK,'b',FtAtMfK,'r',FtAtvMfK,'g')
+bode(FtAvK,'b',FtAtK,'r',FtAtvK,'g')
 legend('Compensado Avanço','Compensado Atraso','Compensado Avanço e Atraso');
+
+% figure(1)
+% step(FtAvMfK,'b',FtAtMfK,'r',FtAtvMfK,'g')
+% legend('Compensado Avanço','Compensado Atraso','Compensado Avanço e Atraso');
+
+% figure(1)
+% rlocus(FtAvMfK,'b',FtAtMfK,'r',FtAtvMfK,'g')
+% legend('Compensado Avanço','Compensado Atraso','Compensado Avanço e Atraso');
 
 %stepinfo(FtAtvMfK)
 %stepinfo(FtAtvMfK)
@@ -180,8 +199,6 @@ legend('Compensado Avanço','Compensado Atraso','Compensado Avanço e Atraso');
 
 % figure(1)
 % bode(Ft,'b',Ft*5069,'r')
-
- 
 % 
 %  TfMf = (FtAv*64.56);
 %  TfMf2 = (TfMf)/(1+TfMf);
