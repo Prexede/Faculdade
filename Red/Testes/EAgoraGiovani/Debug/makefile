@@ -64,8 +64,8 @@ all: main-build
 main-build: EAgoraGiovani.elf secondary-outputs
 
 # Tool invocations
-EAgoraGiovani.elf: $(OBJS) $(USER_OBJS) C:\Users\carlo\STM32CubeIDE\workspace_1.6.0\EAgoraGiovani\STM32F103C6TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "EAgoraGiovani.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\carlo\STM32CubeIDE\workspace_1.6.0\EAgoraGiovani\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EAgoraGiovani.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+EAgoraGiovani.elf: $(OBJS) $(USER_OBJS) C:\Users\carlo\OneDrive\Documentos\GitHub\Faculdade\Red\Testes\EAgoraGiovani\STM32F103C6TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "EAgoraGiovani.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\carlo\OneDrive\Documentos\GitHub\Faculdade\Red\Testes\EAgoraGiovani\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EAgoraGiovani.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
