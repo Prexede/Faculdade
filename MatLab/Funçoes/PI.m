@@ -51,7 +51,7 @@ m = 1;
         m = m+1;
     end     
 Wmf = w(m-1);
-Wmf = 9.6;
+
 %Frequencia de Corte
 Wc = Wmf*0.1;
 
