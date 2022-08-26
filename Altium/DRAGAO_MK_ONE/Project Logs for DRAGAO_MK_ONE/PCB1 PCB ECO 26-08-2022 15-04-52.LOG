@@ -1,0 +1,21 @@
+Add Component: Footprint Not Found CAP0805
+Add Component: Footprint Not Found RES0805
+Add Component: Footprint Not Found RES0805
+Add Component: Footprint Not Found RES0805
+Add Component: Footprint Not Found RES0805
+Add Pin To Net: Unknown Pin: Pin C2-1
+Add Pin To Net: Unknown Pin: Pin C2-2
+Add Pin To Net: Unknown Pin: Pin R1-1
+Add Pin To Net: Unknown Pin: Pin R2-1
+Add Pin To Net: Unknown Pin: Pin R2-2
+Add Pin To Net: Unknown Pin: Pin R3-2
+Add Pin To Net: Unknown Pin: Pin R4-1
+Added Pin To Net: NetName=NetR1_2 Pin=U1-9
+Added Net: Name=NetR1_2
+Added Pin To Net: NetName=NetR3_1 Pin=U1-5
+Added Net: Name=NetR3_1
+Add Class Member: Failed to add class member : Component C2 Cap
+Add Class Member: Failed to add class member : Component R1 Res3
+Add Class Member: Failed to add class member : Component R2 Res3
+Add Class Member: Failed to add class member : Component R3 Res1
+Add Class Member: Failed to add class member : Component R4 Res1
