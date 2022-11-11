@@ -1,0 +1,259 @@
+Removed Pin From Net: NetName=VBAT Pin=U1-1
+Removed Pin From Net: NetName=GND Pin=U1-2
+Removed Pin From Net: NetName=+5V Pin=U1-3
+Removed Pin From Net: NetName=EN1 Pin=U2-15
+Removed Pin From Net: NetName=GND Pin=U2-18
+Removed Pin From Net: NetName=+5V Pin=U2-19
+Removed Pin From Net: NetName=EN1 Pin=U3-1
+Removed Pin From Net: NetName=GND Pin=U3-4
+Removed Pin From Net: NetName=GND Pin=U3-5
+Removed Pin From Net: NetName=+5V Pin=U3-8
+Removed Pin From Net: NetName=GND Pin=U3-12
+Removed Pin From Net: NetName=GND Pin=U3-13
+Removed Member From Class: ClassName=Sheet1 Member=PM1
+Removed Member From Class: ClassName=Sheet1 Member=PM2
+Change Component Footprint: Designator=U3 Old Footprint=DIP880W50P254L2000H510Q16 New Footprint=SOT229P700X180-4N
+Change Component Footprint: Designator=U2 Old Footprint=MODULE_ESP32-DEVKITC New Footprint=FP-D0014A-IPC_A
+Change Component Footprint: Designator=U1 Old Footprint=TO220 New Footprint=SOT229P700X180-4N
+Change Component Comment : Designator=U2 Old Comment=ESP32-DEVKITC New Comment=SN74HC86DR
+Change Component Comment : Designator=U3 Old Comment=L293D New Comment=AMS1117-3.3
+Change Component Comment : Designator=U1 Old Comment=L7805CV New Comment=AMS1117-5.0
+Change Component Designator: OldDesignator=PBAT NewDesignator=PBAT1
+Change Managed Component Library Link : Designator=U1 Old VaultGUID=81A02EA9-F65D-4D87-AC59-1A19B9A78F58 New VaultGUID= Old ItemGUID=82FF50EE-306B-47D6-A825-EAE5C12407CE New ItemGUID= Old RevisionGUID=45A9D4CE-EC1E-4E2B-BC6F-44F94B472204 New RevisionGUID=
+Change Managed Component Library Link : Designator=U2 Old VaultGUID= New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID= New ItemGUID=AD47A9BA-33F7-4D9D-B3EC-EAD7B56AE661 Old RevisionGUID= New RevisionGUID=E07A5B1A-F999-4C98-8DBF-E3661AEF755B
+Change component parameters: Designator = "U1" ("U1"); Footprint = "TO220"; UniqueID = "\ZSRBCHBC" ("\ZSRBCHBC")
+Change component parameters (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "{'manufacturer': u'ams'}"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "AMS1117-5.0"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "U2" ("U2"); Footprint = "MODULE_ESP32-DEVKITC"; UniqueID = "\PQSHWZRU" ("\PQSHWZRU")
+Change component parameters (AddParameter): Name = "Case/Package"; Value = "SOIC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Plating"; Value = "Gold"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "1.58mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "High Level Output Current"; Value = "-5.2mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Length"; Value = "8.65mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Logic Function"; Value = "XOR GATE"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Low Level Output Current"; Value = "5.2mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "85°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Supply Voltage"; Value = "6V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Supply Voltage"; Value = "2V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Bits"; Value = "4"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Circuits"; Value = "4"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Elements"; Value = "4"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Gates"; Value = "4"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Input Lines"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Inputs"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Output Lines"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Outputs"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Pins"; Value = "14"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Supply Voltage"; Value = "5V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Output Current"; Value = "25mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package Quantity"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Propagation Delay"; Value = "17ns"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Quiescent Current"; Value = "2uA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "REACH SVHC"; Value = "No SVHC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Schmitt Trigger Input"; Value = "No"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Series"; Value = "74HC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Technology"; Value = "CMOS"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Turn-On Delay Time"; Value = "21ns"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Weight"; Value = "0.004318oz"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Width"; Value = "3.91mm"; VariantName = "[No Variations]"
+Change component parameters: Designator = "U3" ("U3"); Footprint = "DIP880W50P254L2000H510Q16"; UniqueID = "\YDIYTJTD" ("\YDIYTJTD")
+Change component parameters (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "{'manufacturer': u'Advanced Monolithic Systems'}"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "AMS1117-3.3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C1(FP-0805-L_2_01_0_2-W_1_25-IPC_B)
+Add component (AddParameter): Name = "Capacitance"; Value = "330nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Imperial)"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Metric)"; Value = "2012"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Construction"; Value = "Flat"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Depth"; Value = "1.25mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = "X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dissipation Factor"; Value = "3.5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.4mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Resistance"; Value = "100GR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "2.01mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Quantity"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "No SVHC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = "1.4mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Thickness"; Value = "0.055inch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "16V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating (DC)"; Value = "16V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "1.25mm"; VariantName = "[No Variations]"
+Added Component: Designator=J1(JST_S6B-PH-K-S(LF)(SN))
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "{'manufacturer': u'JST Sales'}"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "S6B-PH-K-S(LF)(SN)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J2(JST_S6B-PH-K-S(LF)(SN))
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "{'manufacturer': u'JST Sales'}"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "S6B-PH-K-S(LF)(SN)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Add Component: Footprint Not Found RES0805
+Add Component: Footprint Not Found RES0805
+Added Component: Designator=U4(SOT229P700X180-4N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "{'manufacturer': u'Advanced Monolithic Systems'}"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "AMS1117-3.3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U5(SOT229P700X180-4N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "{'manufacturer': u'Advanced Monolithic Systems'}"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "AMS1117-3.3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U6(SOT229P700X180-4N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "{'manufacturer': u'Advanced Monolithic Systems'}"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "AMS1117-3.3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U7(MODULE_ESP32_DEVKIT_V1)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "{'manufacturer': u'Do it'}"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "ESP32-DEVKIT-V1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U8(DIP880W50P254L2000H510Q16)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "{'manufacturer': u'STMicroelectronics'}"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "L293D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VBAT Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=VBAT Pin=J1-3
+Added Pin To Net: NetName=GND Pin=J1-6
+Added Pin To Net: NetName=VBAT Pin=J2-3
+Added Pin To Net: NetName=GND Pin=J2-6
+Add Pin To Net: Unknown Pin: Pin R5-2
+Add Pin To Net: Unknown Pin: Pin R6-1
+Added Pin To Net: NetName=GND Pin=U1-1
+Added Pin To Net: NetName=+5V Pin=U1-2
+Added Pin To Net: NetName=VBAT Pin=U1-3
+Added Pin To Net: NetName=GND Pin=U2-7
+Added Pin To Net: NetName=GND Pin=U3-1
+Added Pin To Net: NetName=VBAT Pin=U3-3
+Added Pin To Net: NetName=GND Pin=U4-1
+Added Pin To Net: NetName=VBAT Pin=U4-3
+Added Pin To Net: NetName=GND Pin=U5-1
+Added Pin To Net: NetName=VBAT Pin=U5-3
+Added Pin To Net: NetName=GND Pin=U6-1
+Added Pin To Net: NetName=VBAT Pin=U6-3
+Added Pin To Net: NetName=GND Pin=U7-2
+Added Pin To Net: NetName=EN1 Pin=U7-26
+Added Pin To Net: NetName=GND Pin=U7-29
+Added Pin To Net: NetName=+5V Pin=U7-30
+Added Pin To Net: NetName=EN1 Pin=U8-1
+Added Pin To Net: NetName=GND Pin=U8-4
+Added Pin To Net: NetName=GND Pin=U8-5
+Added Pin To Net: NetName=VBAT Pin=U8-8
+Added Pin To Net: NetName=GND Pin=U8-12
+Added Pin To Net: NetName=GND Pin=U8-13
+Added Pin To Net: NetName=+5V Pin=U8-16
+Added Pin To Net: NetName=+3V3A1 Pin=U2-1
+Added Pin To Net: NetName=+3V3A1 Pin=U3-2
+Added Net: Name=+3V3A1
+Added Pin To Net: NetName=+3V3A2 Pin=U2-4
+Added Pin To Net: NetName=+3V3A2 Pin=U4-2
+Added Net: Name=+3V3A2
+Added Pin To Net: NetName=+3V3B1 Pin=U2-2
+Added Pin To Net: NetName=+3V3B1 Pin=U5-2
+Added Net: Name=+3V3B1
+Added Pin To Net: NetName=+3V3B2 Pin=U2-5
+Added Pin To Net: NetName=+3V3B2 Pin=U6-2
+Added Net: Name=+3V3B2
+Added Pin To Net: NetName=+3V Pin=U2-14
+Added Pin To Net: NetName=+3V Pin=U7-1
+Added Net: Name=+3V
+Added Pin To Net: NetName=EN2 Pin=U7-23
+Added Pin To Net: NetName=EN2 Pin=U8-9
+Added Net: Name=EN2
+Added Pin To Net: NetName=IN1 Pin=U7-24
+Added Pin To Net: NetName=IN1 Pin=U8-2
+Added Net: Name=IN1
+Added Pin To Net: NetName=IN2 Pin=U7-25
+Added Pin To Net: NetName=IN2 Pin=U8-7
+Added Net: Name=IN2
+Added Pin To Net: NetName=IN3 Pin=U7-27
+Added Pin To Net: NetName=IN3 Pin=U8-10
+Added Net: Name=IN3
+Added Pin To Net: NetName=IN4 Pin=U7-28
+Added Pin To Net: NetName=IN4 Pin=U8-15
+Added Net: Name=IN4
+Added Pin To Net: NetName=NetJ1_4 Pin=J1-4
+Added Net: Name=NetJ1_4
+Added Pin To Net: NetName=NetJ1_5 Pin=J1-5
+Added Net: Name=NetJ1_5
+Added Pin To Net: NetName=NetJ2_4 Pin=J2-4
+Added Net: Name=NetJ2_4
+Added Pin To Net: NetName=NetJ2_5 Pin=J2-5
+Added Net: Name=NetJ2_5
+Added Net: Name=NetR5_1
+Added Pin To Net: NetName=NetU2_3 Pin=U2-3
+Added Pin To Net: NetName=NetU2_3 Pin=U7-19
+Added Net: Name=NetU2_3
+Added Pin To Net: NetName=NetU2_6 Pin=U2-6
+Added Pin To Net: NetName=NetU2_6 Pin=U7-20
+Added Net: Name=NetU2_6
+Added Pin To Net: NetName=OU1 Pin=J1-1
+Added Pin To Net: NetName=OU1 Pin=U8-3
+Added Net: Name=OU1
+Added Pin To Net: NetName=OU2 Pin=J1-2
+Added Pin To Net: NetName=OU2 Pin=U8-6
+Added Net: Name=OU2
+Added Pin To Net: NetName=OU3 Pin=J2-1
+Added Pin To Net: NetName=OU3 Pin=U8-11
+Added Net: Name=OU3
+Added Pin To Net: NetName=OU4 Pin=J2-2
+Added Pin To Net: NetName=OU4 Pin=U8-14
+Added Net: Name=OU4
+Change Class Name : Old Net Name=Sheet1 New Net Name=Energia
+Added Member To Class: ClassName=Energia Member=Component C1 330nF
+Added Member To Class: ClassName=Energia Member=Component J1 S6B-PH-K-S(LF)(SN)
+Added Member To Class: ClassName=Energia Member=Component J2 S6B-PH-K-S(LF)(SN)
+Add Class Member: Failed to add class member : Component R5 Res1
+Add Class Member: Failed to add class member : Component R6 Res1
+Added Member To Class: ClassName=Energia Member=Component U4 AMS1117-3.3
+Added Member To Class: ClassName=Energia Member=Component U5 AMS1117-3.3
+Added Member To Class: ClassName=Energia Member=Component U6 AMS1117-3.3
+Added Member To Class: ClassName=Energia Member=Component U7 ESP32-DEVKIT-V1
+Added Member To Class: ClassName=Energia Member=Component U8 L293D
+Change Room Name: Old Name=Sheet1 New Name=Energia
+Change Room Scope: Old Scope=InComponentClass('Sheet1') New Scope=InComponentClass('Energia')

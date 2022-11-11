@@ -369,9 +369,9 @@
    <POPUP w="170" x="758" flags="00000008" y="750" h="237" pid="191" iid="1">
     <PROPERTIES/>
    </POPUP>
-   <POPUP w="695" x="536" flags="00000062" y="315" h="453" pid="0" iid="8">
+   <POPUP w="695" x="593" flags="00000062" y="370" h="453" pid="0" iid="8">
     <PROPERTIES>
-     <ITEM name="AutoEcho">0</ITEM>
+     <ITEM name="AutoEcho">1</ITEM>
      <ITEM name="HexMode">0</ITEM>
     </PROPERTIES>
    </POPUP>

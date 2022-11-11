@@ -1,0 +1,12 @@
+Change Component Footprint: Designator=R1 Old Footprint=RESC0402(1005)_L New Footprint=RESC2013X60X40ML20T25
+Change Component Footprint: Designator=R2 Old Footprint=RESC0402(1005)_L New Footprint=RESC2013X60X40ML20T25
+Change Component Comment : Designator=R1 Old Comment=100R2F New Comment=ERA6AEB101V
+Change Component Comment : Designator=R2 Old Comment=100R2F New Comment=ERA6AEB101V
+Change Managed Component Library Link : Designator=R1 Old VaultGUID=81A02EA9-F65D-4D87-AC59-1A19B9A78F58 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=DB3565EB-6B9D-4F65-AF8D-24A2CDB5670B New ItemGUID=3D5842CA-7285-4CC4-866B-83A23EBDD0B0 Old RevisionGUID=EE949633-5243-4017-9758-B9FE28FCF1EF New RevisionGUID=F96220CF-75EE-482A-A701-623DBEE3D86E
+Change Managed Component Library Link : Designator=R2 Old VaultGUID=81A02EA9-F65D-4D87-AC59-1A19B9A78F58 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=DB3565EB-6B9D-4F65-AF8D-24A2CDB5670B New ItemGUID=3D5842CA-7285-4CC4-866B-83A23EBDD0B0 Old RevisionGUID=EE949633-5243-4017-9758-B9FE28FCF1EF New RevisionGUID=F96220CF-75EE-482A-A701-623DBEE3D86E
+Change component parameters: Designator = "R1" ("R1"); Footprint = "RESC0402(1005)_L"; UniqueID = "\COZTQHRI" ("\COZTQHRI")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "ERA6AEB101V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R2" ("R2"); Footprint = "RESC0402(1005)_L"; UniqueID = "\ROPUITJA" ("\ROPUITJA")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "ERA6AEB101V"; VariantName = "[No Variations]"

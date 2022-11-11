@@ -1,0 +1,5 @@
+Added Member To Class: ClassName=Energia Member=Component C2 Capacitor 0.1 uF +/- 5% 16 V 0402
+Added Member To Class: ClassName=Energia Member=Component R1 100R2F
+Added Member To Class: ClassName=Energia Member=Component R2 100R2F
+Added Member To Class: ClassName=Energia Member=Component R3 Resistor 22K  +/-1 % 0402 63 mW
+Added Member To Class: ClassName=Energia Member=Component R4 10KR2F

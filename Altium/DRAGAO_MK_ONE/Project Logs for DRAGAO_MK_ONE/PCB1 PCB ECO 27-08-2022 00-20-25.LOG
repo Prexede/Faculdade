@@ -1,0 +1,13 @@
+Change Component Comment : Designator=P? Old Comment=SM06B-SRSS-TB(LF)(SN) New Comment=JST-SH-6Pin
+Change Component Comment : Designator=P? Old Comment=SM06B-SRSS-TB(LF)(SN) New Comment=JST-SH-6Pin
+Change Component Designator: OldDesignator=P? NewDesignator=J1
+Change Component Designator: OldDesignator=P? NewDesignator=J2
+Change Net Name : Old Net Name=NetP?_1 New Net Name=NetJ2_1
+Change Net Name : Old Net Name=NetP?_2 New Net Name=NetJ1_2
+Added Pin To Net: NetName=NetJ1_1 Pin=J1-1
+Added Pin To Net: NetName=NetJ1_1 Pin=U2-3
+Added Net: Name=NetJ1_1
+Added Pin To Net: NetName=NetJ2_2 Pin=J2-2
+Added Pin To Net: NetName=NetJ2_2 Pin=U2-14
+Added Net: Name=NetJ2_2
+Added Member To Class: ClassName=Energia Member=Component J2 JST-SH-6Pin

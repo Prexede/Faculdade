@@ -1,0 +1,40 @@
+Altium Designer Pick and Place Locations
+C:\Users\carlo\OneDrive\Documentos\GitHub\Faculdade\Altium\DRAGAO_MK_TWO\Project Outputs for DRAGAO_MK_TWO\Pick Place\Pick Place for PCB2.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       15/09/22
+Time:       16:29
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mil
+
+Designator Comment                             Layer    Footprint                       Center-X(mil) Center-Y(mil) Rotation Description                                                                                                           
+R4         "Resistor 10k +/-1% 0805 125 mW"    TopLayer RESC2013X50X35ML15T15           2113.661      2080.000      180      "Chip Resistor, 10 KOhm, +/- 1%, 125 mW, -55 to 155 degC, 0805 (2012 Metric)"                                         
+DS2        LTST-C190KFKT                       TopLayer LTST-C190KFKT_V                 2100.000      1855.000      180      "LED Uni-Color Orange, 75 mW, 30 mA, -35 to 85 degC, 2-Pin SMD, RoHS, Tape and Reel"                                  
+DS1        LTST-C190KFKT                       TopLayer LTST-C190KFKT_V                 2100.000      1410.000      180      "LED Uni-Color Orange, 75 mW, 30 mA, -35 to 85 degC, 2-Pin SMD, RoHS, Tape and Reel"                                  
+VR5        AMS1117-3.3                         TopLayer SOT229P700X180-4N               1585.000      2235.000      0        "Sot223/Pkg 1-Amp 3.3-Volt Low Drop Out Voltage Regulatator"                                                          
+VR4        AMS1117-3.3                         TopLayer SOT229P700X180-4N               1590.000      835.000       0        "Sot223/Pkg 1-Amp 3.3-Volt Low Drop Out Voltage Regulatator"                                                          
+VR3        AMS1117-3.3                         TopLayer SOT229P700X180-4N               1185.000      2230.000      0        "Sot223/Pkg 1-Amp 3.3-Volt Low Drop Out Voltage Regulatator"                                                          
+VR2        AMS1117-3.3                         TopLayer SOT229P700X180-4N               1170.000      835.000       0        "Sot223/Pkg 1-Amp 3.3-Volt Low Drop Out Voltage Regulatator"                                                          
+VR1        AMS1117-5.0                         TopLayer SOT229P700X180-4N               365.000       535.000       0        ""                                                                                                                    
+U3         SN74HC86N                           TopLayer N0014A                          1405.000      1435.000      0        "4-ch, 2-input, 2-V to 6-V XOR (exclusive OR) gates 14-PDIP -40 to 85"                                                
+U2         L293D                               TopLayer DIP880W50P254L2000H510Q16       445.000       1560.000      180      "4-Channel Motor Driver 24V 16-Pin Power PDIP Tube"                                                                   
+U1         ESP32-DEVKIT-V1                     TopLayer MODULE_ESP32_DEVKIT_V1          1380.000      1530.000      180      "Dual core, Wi-Fi: 2.4 GHz up to 150 Mbits/s,BLE (Bluetooth Low Energy) and legacy Bluetooth, 32 bits, Up to 240 MHz" 
+R3         22k                                 TopLayer FP-CR0805-IPC_B                 2110.000      2200.000      0        "Thick Film Chip Resistors 0805 22kO 0.125W 5% 200ppm/°C"                                                             
+R2         ERA6AEB101V                         TopLayer RESC2013X60X40ML20T25           2090.000      1730.000      180      ""                                                                                                                    
+R1         ERA6AEB101V                         TopLayer RESC2013X60X40ML20T25           2095.000      1530.000      180      ""                                                                                                                    
+PBAT       "JST PH 2-PIN"                      TopLayer JST-B2B-PH-K-S_V                1425.000      2686.653      0        "Male Header, Pitch 2 mm, 1 x 2 Position, Height 6 mm, Tail Length 3.4 mm, -25 to 85 degC, RoHS, Bulk"                
+J2         JST-SH-6Pin                         TopLayer JST-SM06B-SRSS-TB_V             435.000       2674.823      180      "Male Header, Pitch 1 mm, 1 x 6 Position, Height 2.95 mm, -25 to 85 degC, RoHS, Tape and Reel"                        
+J1         JST-SH-6Pin                         TopLayer JST-SM06B-SRSS-TB_V             820.000       2598.543      180      "Male Header, Pitch 1 mm, 1 x 6 Position, Height 2.95 mm, -25 to 85 degC, RoHS, Tape and Reel"                        
+C10        "Capacitor 10 uF +/- 10% 16 V 0805" TopLayer CAPC2013X135X45NL10T25          1495.000      1960.000      270      "Chip Capacitor, 10 uF, +/- 10%, 16 V, 0805 (2012 Metric)"                                                            
+C9         "Capacitor 10 uF +/- 10% 16 V 0805" TopLayer CAPC2013X135X45NL10T25          1675.000      1960.000      270      "Chip Capacitor, 10 uF, +/- 10%, 16 V, 0805 (2012 Metric)"                                                            
+C8         "Capacitor 10 uF +/- 10% 16 V 0805" TopLayer CAPC2013X135X45NL10T25          1500.000      560.000       270      "Chip Capacitor, 10 uF, +/- 10%, 16 V, 0805 (2012 Metric)"                                                            
+C7         "Capacitor 10 uF +/- 10% 16 V 0805" TopLayer CAPC2013X135X45NL10T25          1680.000      560.000       270      "Chip Capacitor, 10 uF, +/- 10%, 16 V, 0805 (2012 Metric)"                                                            
+C6         "Capacitor 10 uF +/- 10% 16 V 0805" TopLayer CAPC2013X135X45NL10T25          1095.000      1960.000      270      "Chip Capacitor, 10 uF, +/- 10%, 16 V, 0805 (2012 Metric)"                                                            
+C5         "Capacitor 10 uF +/- 10% 16 V 0805" TopLayer CAPC2013X135X45NL10T25          1275.000      1961.535      270      "Chip Capacitor, 10 uF, +/- 10%, 16 V, 0805 (2012 Metric)"                                                            
+C4         "Capacitor 10 uF +/- 10% 16 V 0805" TopLayer CAPC2013X135X45NL10T25          1075.000      561.535       270      "Chip Capacitor, 10 uF, +/- 10%, 16 V, 0805 (2012 Metric)"                                                            
+C3         "Capacitor 10 uF +/- 10% 16 V 0805" TopLayer CAPC2013X135X45NL10T25          1260.000      561.535       270      "Chip Capacitor, 10 uF, +/- 10%, 16 V, 0805 (2012 Metric)"                                                            
+C2         100nF                               TopLayer CAPC2013X140X50LL20T25          275.000       277.441       90       ""                                                                                                                    
+C1         330nF                               TopLayer FP-0805-L_2_01_0_2-W_1_25-IPC_B 455.000       263.276       270      "General Purpose Ceramic Capacitor, 0805, 330nF, 10%, X7R, 15%, 16V"                                                  

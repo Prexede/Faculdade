@@ -1,0 +1,40 @@
+Removed Pin From Net: NetName=VBAT Pin=J1-3
+Removed Pin From Net: NetName=NetC3_1 Pin=J1-4
+Removed Pin From Net: NetName=NetC5_1 Pin=J1-5
+Removed Pin From Net: NetName=GND Pin=J1-6
+Removed Pin From Net: NetName=VBAT Pin=J2-3
+Removed Pin From Net: NetName=NetC7_1 Pin=J2-4
+Removed Pin From Net: NetName=NetC9_1 Pin=J2-5
+Removed Pin From Net: NetName=GND Pin=J2-6
+Removed Member From Class: ClassName=Energia Member=J1
+Removed Member From Class: ClassName=Energia Member=J2
+Added Component: Designator=P?(JST-SM06B-SRSS-TB_V)
+Add component (AddParameter): Name = "Datasheet URL"; Value = "https://datasheet.ciiva.com/26894/getdatasheetpartid-708885-26894671.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "11/2010"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "JST"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://www.jst.com/home2.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "SurfaceMount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "No of Positions"; Value = "6"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "Male Header, Pitch 1 mm, 1 X 6 Position, Height 2.9 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "SM06B-SRSS-TB"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Style/Orientation"; Value = "RightAngleHeader/Plug"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "Solder"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "ShroudedHeader"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VBAT Pin=P?-3
+Added Pin To Net: NetName=VBAT Pin=P?-3
+Added Pin To Net: NetName=NetC3_1 Pin=P?-4
+Added Pin To Net: NetName=NetC7_1 Pin=P?-4
+Added Pin To Net: NetName=NetC5_1 Pin=P?-5
+Added Pin To Net: NetName=NetC9_1 Pin=P?-5
+Added Pin To Net: NetName=GND Pin=P?-6
+Added Pin To Net: NetName=GND Pin=P?-6
+Added Pin To Net: NetName=NetP?_1 Pin=P?-1
+Added Pin To Net: NetName=NetP?_1 Pin=U2-11
+Added Net: Name=NetP?_1
+Add Net: Net with name "NetP?_1" already exists
+Added Pin To Net: NetName=NetP?_2 Pin=P?-2
+Added Pin To Net: NetName=NetP?_2 Pin=U2-6
+Added Net: Name=NetP?_2
+Add Net: Net with name "NetP?_2" already exists
+Added Member To Class: ClassName=Energia Member=Component P? SM06B-SRSS-TB(LF)(SN)

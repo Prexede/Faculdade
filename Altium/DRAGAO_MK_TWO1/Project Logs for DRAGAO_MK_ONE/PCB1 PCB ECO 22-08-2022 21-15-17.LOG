@@ -1,0 +1,13 @@
+Change Component Designator: OldDesignator=U1 NewDesignator=VR1
+Change Component Designator: OldDesignator=U3 NewDesignator=VR2
+Change Component Designator: OldDesignator=U4 NewDesignator=VR4
+Change Component Designator: OldDesignator=U5 NewDesignator=VR3
+Change Component Designator: OldDesignator=U6 NewDesignator=VR5
+Add Component: Footprint Not Found RES0805
+Add Component: Footprint Not Found RES0805
+Add Pin To Net: Unknown Pin: Pin R5-1
+Add Pin To Net: Unknown Pin: Pin R5-2
+Add Pin To Net: Unknown Pin: Pin R6-1
+Add Pin To Net: Unknown Pin: Pin R6-2
+Add Class Member: Failed to add class member : Component R5 Res1
+Add Class Member: Failed to add class member : Component R6 Res1

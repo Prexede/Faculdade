@@ -1,0 +1,59 @@
+Change Component Footprint: Designator=DS1 Old Footprint=LTST-LTL-1CHG-2 New Footprint=LTST-C190KFKT_V
+Change Component Footprint: Designator=DS2 Old Footprint=LTST-LTL-1CHG-2 New Footprint=LTST-C190KFKT_V
+Change Component Comment : Designator=DS1 Old Comment=LTL-1CHG New Comment=LTST-C190KFKT
+Change Component Comment : Designator=DS2 Old Comment=LTL-1CHG New Comment=LTST-C190KFKT
+Change Managed Component Library Link : Designator=DS1 Old VaultGUID=81A02EA9-F65D-4D87-AC59-1A19B9A78F58 New VaultGUID=81A02EA9-F65D-4D87-AC59-1A19B9A78F58 Old ItemGUID=D09D2248-4C9F-4D47-AA89-5961D4260FA4 New ItemGUID=175BECC9-6295-417F-9154-C1ABC3F25242 Old RevisionGUID=9B786571-2026-47D0-BA8E-6F05E5E99F68 New RevisionGUID=BD679CB2-CFCF-49BA-98F0-CED5B8E2A0EB
+Change Managed Component Library Link : Designator=DS2 Old VaultGUID=81A02EA9-F65D-4D87-AC59-1A19B9A78F58 New VaultGUID=81A02EA9-F65D-4D87-AC59-1A19B9A78F58 Old ItemGUID=D09D2248-4C9F-4D47-AA89-5961D4260FA4 New ItemGUID=175BECC9-6295-417F-9154-C1ABC3F25242 Old RevisionGUID=9B786571-2026-47D0-BA8E-6F05E5E99F68 New RevisionGUID=BD679CB2-CFCF-49BA-98F0-CED5B8E2A0EB
+Change component parameters: Designator = "DS1" ("DS1"); Footprint = "LTST-LTL-1CHG-2"; UniqueID = "\QDOTYOXF" ("\QDOTYOXF")
+Change component parameters (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Colour"; Value = "Orange"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet URL"; Value = "http://optoelectronics.liteon.com/upload/download/DS-22-99-0186/S_110_LTST-C190KFKT.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Version"; Value = "Rev. I, 09/2011"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Forward Current"; Value = "20mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Forward Voltage"; Value = "2V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Illumination Colour"; Value = "Orange"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lens Style"; Value = "Diffused"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Luminous Intensity"; Value = "90mcd"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Lite-On"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer URL"; Value = "http://www.us.liteon.com/"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "85°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Power Dissipation"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Technology"; Value = "SM"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Nominal Vf"; Value = "2V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package Description"; Value = "2-Pin Surface Mount Device, Body 1.6 x 0.8 mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package Quantity"; Value = "3000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package Reference"; Value = "C190KFKT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "TapeandReel"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power"; Value = "75mW"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS Compliant"; Value = "True"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Viewing Angle"; Value = "130degrees"; VariantName = "[No Variations]"
+Change component parameters: Designator = "DS2" ("DS2"); Footprint = "LTST-LTL-1CHG-2"; UniqueID = "\QWTCFNKK" ("\QWTCFNKK")
+Change component parameters (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Colour"; Value = "Orange"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet URL"; Value = "http://optoelectronics.liteon.com/upload/download/DS-22-99-0186/S_110_LTST-C190KFKT.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Version"; Value = "Rev. I, 09/2011"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Forward Current"; Value = "20mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Forward Voltage"; Value = "2V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Illumination Colour"; Value = "Orange"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lens Style"; Value = "Diffused"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Luminous Intensity"; Value = "90mcd"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Lite-On"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer URL"; Value = "http://www.us.liteon.com/"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "85°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Power Dissipation"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Technology"; Value = "SM"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Nominal Vf"; Value = "2V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package Description"; Value = "2-Pin Surface Mount Device, Body 1.6 x 0.8 mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package Quantity"; Value = "3000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package Reference"; Value = "C190KFKT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "TapeandReel"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power"; Value = "75mW"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS Compliant"; Value = "True"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Viewing Angle"; Value = "130degrees"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=Energia Member=Component C5 Capacitor 10 uF +/- 10% 16 V 0805
+Added Member To Class: ClassName=Energia Member=Component C8 Capacitor 10 uF +/- 10% 16 V 0805
+Added Member To Class: ClassName=Energia Member=Component U2 L293D

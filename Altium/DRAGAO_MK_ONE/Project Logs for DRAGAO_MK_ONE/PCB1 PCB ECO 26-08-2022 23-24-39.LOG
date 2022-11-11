@@ -1,0 +1,47 @@
+Removed Pin From Net: NetName=VBAT Pin=R3-1
+Change Component Footprint: Designator=R3 Old Footprint=RESC0402(1005)_L New Footprint=FP-CR0805-IPC_B
+Change Component Footprint: Designator=R4 Old Footprint=RESC0402(1005)_L New Footprint=RESC2013X50X35ML15T15
+Change Component Comment : Designator=R4 Old Comment=10KR2F New Comment=Resistor 10k +/-1% 0805 125 mW
+Change Component Comment : Designator=R3 Old Comment=Resistor 22K  +/-1 % 0402 63 mW New Comment=22k
+Change Managed Component Library Link : Designator=R4 Old VaultGUID=81A02EA9-F65D-4D87-AC59-1A19B9A78F58 New VaultGUID=81A02EA9-F65D-4D87-AC59-1A19B9A78F58 Old ItemGUID=54ED9318-E209-45F1-AAE8-A295196681D7 New ItemGUID=35F652F3-737A-4E79-A37C-A41ED5DAC314 Old RevisionGUID=F40742B0-C8A1-4BC0-BD12-FFA1AF081704 New RevisionGUID=CCF85E52-B78A-4288-A576-701C53BCB3D8
+Change Managed Component Library Link : Designator=R3 Old VaultGUID=81A02EA9-F65D-4D87-AC59-1A19B9A78F58 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=4171690E-57C2-45AC-B774-D3E175653773 New ItemGUID=5A33C64D-013D-4542-8F60-9BC1A4BA42A9 Old RevisionGUID=0DDBE0E5-5D87-4781-A724-EDDD0EB28D73 New RevisionGUID=CADB5DFE-AB4B-4094-A6DD-AB83E92BC4CA
+Change component parameters: Designator = "R3" ("R3"); Footprint = "RESC0402(1005)_L"; UniqueID = "\WWIGOAPA" ("\WWIGOAPA")
+Change component parameters (AddParameter): Name = "Case Code (Imperial)"; Value = "0805"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case Code (Metric)"; Value = "2012"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case/Package"; Value = "0805"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Composition"; Value = "Thick Film"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Plating"; Value = "Tin"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Depth"; Value = "1.25mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "0.5mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Length"; Value = "2mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Military Standard"; Value = "Not"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package Quantity"; Value = "5000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Rating"; Value = "125mW"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Resistance"; Value = "22kR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Temperature Coefficient"; Value = "200ppm/°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Termination"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Thickness"; Value = "508um"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "5%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "150V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Width"; Value = "1.25mm"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R4" ("R4"); Footprint = "RESC0402(1005)_L"; UniqueID = "\GUUORMDG" ("\GUUORMDG")
+Change component parameters (AddParameter): Name = "Case/Package"; Value = "0805"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Technology"; Value = "SM"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power"; Value = "125mW"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS Compliant"; Value = "True"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "150V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VBAT Pin=R3-2
+Added Pin To Net: NetName=NetR3_1 Pin=R3-1
+Added Pin To Net: NetName=NetR3_1 Pin=R4-2
+Added Pin To Net: NetName=NetR3_1 Pin=U1-5
+Added Net: Name=NetR3_1

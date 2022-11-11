@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=+5V Pin=C2-1
+Removed Pin From Net: NetName=GND Pin=C2-2
+Change Component Footprint: Designator=C2 Old Footprint=CAPC1005X56X25LL10T15 New Footprint=CAPC2013X140X50LL20T25
+Change Component Comment : Designator=C2 Old Comment=Capacitor 0.1 uF +/- 5% 16 V 0402 New Comment=100nF
+Change Managed Component Library Link : Designator=C2 Old VaultGUID=81A02EA9-F65D-4D87-AC59-1A19B9A78F58 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=A314ADD4-34EA-401B-852C-6583977560B4 New ItemGUID=68C6B696-E7A4-4D43-9EE9-D2D7CCF44FC4 Old RevisionGUID=D166DC9B-CD33-4289-8597-0CF64CD3535C New RevisionGUID=94462194-CA50-4C76-B3EC-0627BBA36C3C
+Change component parameters: Designator = "C2" ("C2"); Footprint = "CAPC1005X56X25LL10T15"; UniqueID = "\VKVQBBKQ" ("\VKVQBBKQ")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "AVX Interconnect / Elco"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "08055C104K4T4A"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=+5V Pin=C2-2

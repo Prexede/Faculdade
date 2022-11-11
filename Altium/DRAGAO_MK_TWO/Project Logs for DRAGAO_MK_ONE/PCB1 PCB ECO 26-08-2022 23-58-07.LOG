@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=VBAT Pin=PBAT1-1
+Removed Pin From Net: NetName=GND Pin=PBAT1-2
+Removed Member From Class: ClassName=Energia Member=PBAT1
+Change Component Comment : Designator=J? Old Comment=B2B-PH-K-S(LF)(SN) New Comment=JST PH 2-PIN
+Change Component Designator: OldDesignator=J? NewDesignator=PBAT
+Added Pin To Net: NetName=GND Pin=PBAT-1
+Added Pin To Net: NetName=VBAT Pin=PBAT-2

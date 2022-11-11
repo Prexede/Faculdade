@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=NetR1_2 Pin=U1-9
+Added Pin To Net: NetName=NetR1_2 Pin=U1-3
+Added Member To Class: ClassName=Energia Member=Component DS1 LTST-C190KFKT
+Added Member To Class: ClassName=Energia Member=Component DS2 LTST-C190KFKT
+Added Member To Class: ClassName=Energia Member=Component R4 Resistor 10k +/-1% 0805 125 mW
