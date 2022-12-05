@@ -30,7 +30,7 @@ t=linspace(0,600,6000);
 %Função Transferencia 
 G  = tf(K,[T 1]);
 
-%Padme 1 grau
+%Pame 1 grau
 P1 = tf([-L 2],[L 2]);
 
 %Pade 2 grau
@@ -66,7 +66,7 @@ xlabel('Tempo[s]')
 ylabel('Temperatura[ºC]')
 grid on
 
-figure(3)  %%ERRO EEEEEEEEERROOOOOOOOOOOOOOOOOOOOOOOOOo
+figure(3)  
 plot(t,(y3 + Ta))
 title('Função Temperatura Malha aberta(terceira aproximação)')
 xlabel('Tempo[s]')
@@ -78,13 +78,19 @@ plot(t,(y1 + Ta),'r--',t,(y2 + Ta),'b-.',t,(y3 + Ta),'m:','LineWidth',1.2)
 title('Respostas a Degrau funçoes de transferencia')
 xlabel('Tempo[s]')
 ylabel('Temperatura[ºC]')
-legend('Resposta 1','Resposta 2','Resposta 3')
+legend('Resposta Pade 1ºOrdem','Resposta Pade 2ºOrdem','Resposta Terceira Aproximação')
 grid on
 
 
 %% RESPOSTA 5.1.8
 
-
+%A Única diferença que temos nas diferentes respostas do sistema,é a
+%mudança de como ele se inicia no regime transitório, para a resposta de
+%primeiro grau, observamos uma descida da temperatura e uma subida em pouco
+%tempo, para a função de transfência de segundo grau temos dois pontos de
+%inflexão, mudando a concavidade da curva. E para a última resposta, temos
+%uma reta com valor constante ate o início da resposta em 10s.
+%Para o regime permanente não tivemos nenhuma diferença entre as respostas.
 
 %% Malha fechada
 Kp = T / (K*L);
@@ -98,9 +104,6 @@ GMf3 = feedback(Kp*P3,1);
 yf1 = step(Ts*GMf1,tt);
 yf2 = step(Ts*GMf2,tt);
 yf3 = step(Ts*GMf3,tt);
-
-
-
 
 figure(5)
 plot(tt,(yf1 + Ta))
@@ -116,7 +119,7 @@ xlabel('Tempo[s]')
 ylabel('Temperatura[ºC]')
 grid on
 
-figure(7)  %%ERRO EEEEEEEEERROOOOOOOOOOOOOOOOOOOOOOOOOo
+figure(7)  
 plot(tt,(yf3 + Ta))
 title('Função Temperatura Malha aberta(terceira aproximação)')
 xlabel('Tempo[s]')
@@ -129,5 +132,27 @@ plot(tt,(yf1 + Ta),'r--',tt,(yf2 + Ta),'b-.',tt,(yf3 + Ta),'m:','LineWidth',1.2)
 title('Respostas a Degrau funçoes de transferencia')
 xlabel('Tempo[s]')
 ylabel('Temperatura[ºC]')
-legend('Resposta 1','Resposta 2','Resposta 3')
+legend('Resposta Pade 1ºOrdem','Resposta Pade 2ºOrdem','Resposta Terceira Aproximação')
 grid on
+
+%% RESPOSTA 5.2.6
+
+
+%% Dados Simulink 
+
+Tempo = Pade.time;
+PadeF1 = Pade1.data;
+PadeF2 = Pade2.data;
+
+figure(9)
+plot(Tempo,PadeF1,'r--',Tempo,PadeF2,'m:','LineWidth',1.2)
+title('Respostas a Degrau funçoes de transferencia(Dados Simulink)')
+xlabel('Tempo[s]')
+ylabel('Temperatura[ºC]')
+legend('Resposta Pade 1ºOrdem','Resposta Pade 2ºOrdem')
+grid on
+
+
+
+
+
